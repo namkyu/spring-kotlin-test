@@ -2,8 +2,11 @@
 ### region list
 GET http://localhost:8090/regions
 
+### exception 테스트
+GET http://localhost:8090/exception
+
 ### region create
-POST http://localhost:8090/regions
+POST http://localhost:8090/regions2
 Content-Type: application/json
 
 {

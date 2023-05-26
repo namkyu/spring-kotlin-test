@@ -16,5 +16,9 @@ enum class RegionType(val code: Int, val regionName: String) {
         fun find(regionName: String) = values().find {
             it.regionName == regionName
         } ?: throw IllegalArgumentException("EnumTest not found for regionName: $regionName")
+
+        fun exists(regionName: String) = values().any {
+            it.regionName == regionName
+        }
     }
 }
