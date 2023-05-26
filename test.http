@@ -1,0 +1,13 @@
+
+### region list
+GET http://localhost:8090/regions
+
+### region create
+POST http://localhost:8090/regions
+Content-Type: application/json
+
+{
+  "region": "seoul",
+  "dataType": 1,
+  "dateTime": "20230526"
+}
